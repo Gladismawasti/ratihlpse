@@ -91,7 +91,7 @@
           </ul>
         </div>
       </header>
-      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+      <div class="demo-drawer mdl-layout__drawer mdl-color--light-blue-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
           <img src="images/user.jpg" class="demo-avatar">
           <div class="demo-avatar-dropdown">
@@ -124,20 +124,12 @@
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
-          <table id="tabel" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+          <table id="tabel" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
             <thead>
               <tr>
-                <th class="mdl-data-table__cell--non-numeric">No.</th>
-                <th>OPD</th>
-                <th>Pengadaan Barang <br> (Jumlah) <center></center></th>
-                <th>Pengadaan Barang <br> (Pagu)</th>
-                <th>Pekerjaan Konstruksi <br> (Jumlah)</th>
-                <th>Pekerjaan Konstruksi <br> (Pagu)</th>
-                <th>Jasa Konsultasi <br> (Jumlah)</th>
-                <th>Jasa Konsultasi <br> (Pagu)</th>
-                <th>Jasa Lainnya <br> (Jumlah)</th>
-                <th>Jasa Lainnya <br> (Pagu)</th>
-                <th>Total <br> (Pagu)</th>
+                <th class="mdl-data-table__cell--non-numeric">ID</th>
+                <th class="mdl-data-table__cell--non-numeric">Nama</th>
+                <th class="mdl-data-table__cell--non-numeric">Jenis</th>
                 <th>Total <br> (Pagu)</th>
               </tr>
             </thead>
@@ -202,42 +194,18 @@
 
     console.log('sampleData', sampleData)
 
-// Builds the HTML Table out of myList.
-function buildHtmlTable(selector) {
-  var columns = addAllColumnHeaders(sampleData, selector);
 
-  for (var i = 0; i < sampleData.length; i++) {
-    var row$ = $('<tr/>');
-    for (var colIndex = 0; colIndex < columns.length; colIndex++) {
-      var cellValue = sampleData[i][columns[colIndex]];
-      if (cellValue == null) cellValue = "";
-      row$.append($('<td/>').html(cellValue));
-    }
-    $(selector).append(row$);
-  }
-}
-
-// Adds a header row to the table and returns the set of columns.
-// Need to do union of keys from all records as some records may not contain
-// all records.
-function addAllColumnHeaders(sampleData, selector) {
-  var columnSet = [];
-  var headerTr$ = $('<tr/>');
-
-  for (var i = 0; i < sampleData.length; i++) {
-    var rowHash = sampleData[i];
-    for (var key in rowHash) {
-      if ($.inArray(key, columnSet) == -1) {
-        columnSet.push(key);
-        headerTr$.append($('<th/>').html(key));
-      }
-    }
-  }
-  $(selector).append(headerTr$);
-
-  return columnSet;
-} 
-buildHtmlTable("#tabel")
+sampleData.map((doc) => {
+    const tr = `
+        <tr>
+            <td>${ doc.id }</td>
+            <td class="mdl-data-table__cell--non-numeric">${ doc.nama }</td>
+            <td>${ doc.total_pagu }</td>
+            <td>${ (doc.jenis_belanja_str ? doc.jenis_belanja_str : '-') }</td>
+        </tr>
+    `
+    $("#tabel").append(tr)
+})
 
   </script>
 
