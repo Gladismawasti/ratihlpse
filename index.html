@@ -68,7 +68,7 @@
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+      <header class="demo-header mdl-layout__header mdl-color--white-100 mdl-color-text--white-600">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">RUP</span>
           <div class="mdl-layout-spacer"></div>
@@ -91,11 +91,12 @@
           </ul>
         </div>
       </header>
-      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-          <img src="images/user.jpg" class="demo-avatar">
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-white-900 mdl-color-text--blue-white-50">
+        <header class="demo-drawer-header" style="background-color: #00ffff">
+
+          <img src="images/user.png" width="150" height="60" >
           <div class="demo-avatar-dropdown">
-            <span>Laporan Pengadaan Melalui LPSE <br> Kabupaten Purbalingga</span>
+            <span><bold>Laporan Pengadaan Melalui LPSE <br> Kabupaten Purbalingga</bold></span>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons" role="presentation">arrow_drop_down</i>
@@ -108,21 +109,51 @@
             </ul>
           </div>
         </header>
-        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
+
+        <nav class= "demo-navigation mdl-navigation mdl-color--blue-white-800">
+          
+          <a class="mdl-navigation__link" href="" >
+            <i class="mdl-color-text--blue-white-400 material-icons" role="presentation">home</i>Beranda
+          </a>
+
+
+
+          <!-- Right aligned menu below button -->
+
+          <a class="mdl-navigation__link" href="#">
+            <i class="mdl-color-text--blue-white-400 material-icons" role="presentation">inbox</i>RUP Penyedia
+              <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+          </a>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+            <li class="mdl-menu__item">Rekap RUP Penyedia per OPD</li>
+            <li class="mdl-menu__item">Daftar RUP Penyedia</li>
+          </ul>
+
+<a class="mdl-navigation__link" href="#">
+            <i class="mdl-color-text--blue-white-400 material-icons" role="presentation">inbox</i>Lelang LPSE
+              <button id="demo-menu-lower-right-2" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+          </a>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right-2">
+  <li class="mdl-menu__item">Rekapitulasi Pengadaan</li>
+  <li class="mdl-menu__item">Rekapitulasi Pengadaan per OPD</li>
+  <li class="mdl-menu__item">Efisiensi Lelang</li>
+  <li class="mdl-menu__item">Lelang yang Dilaksanakan</li>
+  <li class="mdl-menu__item">Lelang Ulang</li>
+  <li class="mdl-menu__item">Pemenang Berdasarkan Lokasi</li>
+  <li class="mdl-menu__item">Pemenang Nilai</li>
+</ul>
+       
+
           <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-white-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>
-      <main class="mdl-layout__content mdl-color--grey-100">
+      <main class="mdl-layout__content mdl-color--white-100">
         <div class="mdl-grid demo-content">
           <table id="tabel" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
             <thead>

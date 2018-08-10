@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
+/*#a2c0f2*/
+
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Roboto', 'Helvet ca', sans-serif;
 }
 .demo-avatar {
   width: 48px;
@@ -57,6 +59,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  color: #1f6c91;
 }
 
 .demo-navigation {
@@ -68,15 +71,17 @@ html, body {
   align-items: center;
   color: rgba(255, 255, 255, 0.56);
   font-weight: 500;
+  color: #00000c
 }
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
-  background-color: #00BCD4;
-  color: #37474F;
+  background-color: #00bcd4;
+  color: #fdfdff;
 }
 .demo-navigation .mdl-navigation__link .material-icons {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.56);
   margin-right: 32px;
+  color: #00000c;
 }
 
 .demo-content {
@@ -172,4 +177,8 @@ _:-ms-input-placeholder, :root .demo-graph {
   display: flex;
   box-sizing: border-box;
   align-items: center;
+}
+.header {
+    background-color: #00bcd4;
+
 }
