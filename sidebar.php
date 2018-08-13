@@ -36,16 +36,11 @@
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href="/?page=rekapitulasi"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Rekapitulasi Pengadaan</a>
-          <a class="mdl-navigation__link" href="/?page=rekapitulasi_per_opd"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Rekapitulasi Pengadaan per OPD</a>
-          <a class="mdl-navigation__link" href="/?page=efisiensi_lelang"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Efisiensi Lelang</a>
-          <a class="mdl-navigation__link" href="/?page=lelang_dilaksanakan"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Lelang yang Dilaksanakan</a>
-          <a class="mdl-navigation__link" href="/?page=lelang_ulang"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Lelang Ulang</a>
-          <a class="mdl-navigation__link" href="/?page=pemenang"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Pemenang Berdasarkan Lokasi</a>
-
-
-
-          <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+          <a class="mdl-navigation__link" href="?page=rekapitulasi"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Rekapitulasi Pengadaan</a>
+          <a class="mdl-navigation__link" href="?page=rekapitulasi_per_opd"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Rekapitulasi Pengadaan per OPD</a>
+          <a class="mdl-navigation__link" href="?page=efisiensi_lelang"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Efisiensi Lelang</a>
+          <a class="mdl-navigation__link" href="?page=lelang_dilaksanakan"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Lelang yang Dilaksanakan</a>
+          <a class="mdl-navigation__link" href="?page=lelang_ulang"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Lelang Ulang</a>
+          <a class="mdl-navigation__link" href="?page=pemenang"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Pemenang Berdasarkan Lokasi</a>
         </nav>
       </div>
